@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+
+*{
+    /* outline: 1px solid black; */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+body, html{
+    height: 100%;
+    width: 100%;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* main div css */
+#main {
+    transition: margin-left .5s;
+    overflow-x: visible;
+    min-width: 450px;
+}
+
+/* header css */
+#header{
+    width: 100%;
+    background-color: #FF6A3D;
+    color: #f1f1f1;
+    text-shadow: 1px 2px 5px rgba(81,67,21,0.8);
+    padding: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+/* dashboard css */
+#dashboard-title-div{
+    width: 100%;
+    padding: 20px;
+}
+#dashboard-heading, #dashboard-heading > i{
+    font-weight: 900;
+    font-size: 3rem;
+    text-align: left;
+    color:#1A2238;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+#dashboard-subheading{
+    font-size: 1rem;
+    color: #797575;
+}
+
+/* dashboard overview css */
+#dashboard-section{
+    width: 100%;
+    height: inherit;
+    padding: 20px;
+}
+
+.dashboard-section-item{
+    padding: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+#dashboard-overview-items{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.overview-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 350px;
+    height: 100px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+}
+
+.total-number{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.panel-title{
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid #1A2238;
+    color: #FF6A3D;
+    font-size: 1.5rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}

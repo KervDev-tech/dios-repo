@@ -1,0 +1,194 @@
+
+/* //made by Kervin Zoren Bonaobra  */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* outline: 1px solid black; */
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #2E2C2C;
+    transition: all 0.2s ease;
+}
+.error{
+    color: #ff0000;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    display: none;
+}
+.success{
+    color: #4BB543;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+.error-query{
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #b33a3a;
+    border-radius: 10px;
+}
+.error-query-label{
+    font-size: 1.75rem;
+    font-weight: 900;
+    color: #fff;
+}
+.error-queries{
+    color: #fff;
+
+}
+::placeholder{
+    color: #797575;
+    font-size: 00.75rem;
+}
+#heading{
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.8vw;
+    color: #fff;
+}
+#sub-heading{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.5vw;
+    color: #fff;
+}
+#user-type{
+    font-size: 1rem;
+}
+
+#content-div{
+    background-color: #FFF;
+}
+#signup-form-div{
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    max-width: 1500px;
+    margin: 30px auto;
+    padding: 20px;
+}
+#form-heading-div{
+    padding: 1rem;
+    margin-bottom: 40px;
+}
+#form-heading{
+    font-weight: 900;
+    font-size: 3rem;
+    width: 100%;
+    text-align: left;
+    color: #FF6A3D;
+}
+#form-sub-heading{
+    font-size: 1rem;
+    color: #797575;
+}
+#signup-form{
+    display: grid;
+    display: flex;
+    flex-flow: column;
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+}
+.inputs-div-label{
+    padding-left: 40px;
+    color: #FF6A3D;
+    text-transform: uppercase;
+    font-size: 0.80rem;
+    letter-spacing: 4px;
+}
+.inputs-div-divider{
+    display: grid;
+    grid-gap: 10px;
+    margin-bottom: 40px;
+}
+
+.inputs-div-divider:nth-last-child(1){
+    display: flex;
+    justify-content: center;
+}
+.inputs-div{
+    /* min-width: 300px; */
+    height: 100px;
+    display: flex;
+    flex-flow: column;
+    padding: 1rem;
+}
+.input-label{
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.input-field{
+    width: 100%;
+    padding: 10px;
+    font-size: 1.3rem;
+    border: none;
+    border-radius:7px;
+    background-color: rgba(223, 223, 223, 0.7)
+
+}
+.input-field:focus{
+    outline:none;
+    border-left: 3px solid #FF6A3D;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+#signup-btn{
+    background-color: #FF6A3D;
+    min-width: 250px;
+    height: 3rem;
+    color: #fff;
+    border-radius:7px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    grid-column: span 2;
+    border: none;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+#signup-btn:hover{
+    background-color:  #dd3e0e;
+}
+#agreement-div{
+    font-weight: 200;
+    font-size: 0.80rem;
+    color: #797575;
+    text-align: center;
+}
+
+#terms-conditions-link{
+    color: #FF6A3D;
+
+}
+#login-btn:hover{
+    color:  #dd3e0e;
+}
+#login-btn{
+    cursor: pointer;
+    color: #FF6A3D;
+}
+@media (max-width: 1366px){
+    #signup-form-div{
+        margin: 0 auto;
+        border-radius: 0;
+    }
+}
+
+@media (min-width: 1024px){
+    #main{
+        height: initial;
+    }
+    .inputs-div-divider{
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+@media (min-width: 1366px) {
+    .inputs-div-divider{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

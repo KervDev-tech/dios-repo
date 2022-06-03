@@ -1,0 +1,98 @@
+
+/* side nav css */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #1A2238;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.logo-pic {
+    width: 100px;
+    height: 65px;
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+}
+
+.sidenav a {
+    padding: 20px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+    color: #fff;
+}
+
+.sidenav a:nth-child(2){
+    background-color: #FF6A3D;
+    padding: 20px 20px 20px 15px;
+    margin: 24px 0 0 0 ;
+}
+
+.sidenav a:hover {
+    /* color: #f1f1f1; */
+    color: #FF6A3D;
+    transform: scale(1.02);
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* .sidenav a:nth-child(2){
+    text-align: left;
+    background-color: #FF6A3D;
+} */
+
+.nav-btn{
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #fff;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.nav-btn:hover, #burger-menu:hover {
+    /* color: #f1f1f1; */
+    color: #FF6A3D;
+    transform: scale(1.02);
+}
+
+#logout-btn{
+    background-color: #fff;
+    border: none;
+    color: #1A2238;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+
+#footer{
+    width: 100%;
+    height: 40px;
+    padding-top: 10px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    color:  rgb(153, 150, 139);
+}

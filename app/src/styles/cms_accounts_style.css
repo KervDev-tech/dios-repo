@@ -1,0 +1,115 @@
+#main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#create-account-div{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#heading-title{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #FF6A3D;
+
+}
+#create-btn-label{
+    padding: 20px;
+    color: #797575;
+}
+#session-result-div{
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #cf000f;
+    font-size: 0.75rem;
+    text-align: center;
+    background-color: #e0babc;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+#create-btn:hover{
+    background-color: #1A2238;
+    border: 1px solid #FF6A3D;
+    color: #FF6A3D;
+}
+#data-tb_wrapper{
+    padding: 20px;
+    margin: 0 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow-x: scroll;
+}
+#data-tb{
+    height: 300px;
+    border-collapse: collapse;
+    overflow-y: scroll;
+}
+tbody{
+    height: 500px;
+    overflow-x: scroll;
+}
+tr{
+    height: 50px;
+    border-radius: 10px;
+    border-bottom: 1px solid #1A2238;
+}
+.odd, .even{
+    max-height: 50px;
+}
+thead > tr > td{
+    color: #1a2238;
+    font-weight: 800;
+    word-break: break-all;
+    white-space: nowrap;
+}
+.unavailable{
+    background-color: #fffD;
+    color: #FF6A3D;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px;
+    border-left: 2px solid #FF6A3D;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    pointer-events: none;
+}
+.action, #create-btn{
+    background-color: #FF6A3D;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px;
+    border-left: 5px solid #FF6A3D;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+#export-btn{
+    margin: 20px;
+    border: none;
+    background-color: #fff;
+    color: #FF6A3D;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+#export-btn:hover{
+    background-color: #FF6A3D;
+    color: #fff;
+}
+.action:hover{
+    border-left: 2px solid #1A2238;
+}

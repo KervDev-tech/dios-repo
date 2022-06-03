@@ -1,0 +1,106 @@
+#navbar{
+    width: 100%;
+    height: auto;
+    background-color: #FF6A3D;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 0 10px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo-pic {
+    width: 100px;
+    height: 65px;
+}
+.navitems {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navitems > li{
+    padding: 0 10px;
+}
+a{
+    color: white;
+}
+.navitems > li > a{
+    cursor: pointer;
+    text-shadow: 1px 1px 5px #6e4437;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.navitems > li > a:hover{
+    background-color: #fff;
+    color: #FF6A3D;
+    text-shadow: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: 0.3s;
+}
+.active{
+    color: #3c3e41;
+}
+#login-btn-emp, #login-btn-guest{
+    margin: 0 10px;
+}
+#signup-btn-emp{
+    background-color: #fff;
+    color: #FF6A3D;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: 0.3s;
+}
+#signup-btn-guest{
+    border:1px solid #fff;
+}
+#signup-btn-emp:hover, #signup-btn-guest:hover{
+    border-left: 5px solid #1A2238;
+    transition: 0.3s;
+}
+#signup-btn-emp, #signup-btn-guest{
+    color: #1A2238;
+    border-radius: 5px;
+    text-shadow: none;
+    margin: 0 8px;
+}
+
+@media (max-width: 1880px) {
+    #navbar{
+        padding: 0 10px 0 10px;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+}
+@media (max-width: 1366px) {
+    #navbar{
+        padding:10px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+    }
+    .navitems {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        word-break: keep-all;
+    }
+    .navitems > li{
+        margin: 15px;
+    }
+}
